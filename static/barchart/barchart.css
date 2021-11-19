@@ -1,0 +1,22 @@
+.bar {
+    fill:mediumspringgreen;
+}
+
+.axis {
+    font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.bar text {
+    fill: white;
+    font: 14px sans-serif;
+}
