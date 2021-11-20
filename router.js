@@ -7,7 +7,7 @@ router.get('/barchart', function (req, res) {
 });
 
 router.get('/scatterplot', function (req, res) {
-    res.sendFile(path.join(__dirname, 'static/barchart/barchart.html'));
+    res.sendFile(path.join(__dirname, 'static/scatterplot/scatterplot.html'));
 });
 
 module.exports = router;

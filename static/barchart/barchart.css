@@ -16,7 +16,16 @@
     display: none;
 }
 
-.bar text {
-    fill: white;
-    font: 14px sans-serif;
+.barChange {
+    fill: #fa0060
+}
+
+.legend {
+    fill: none;
+    stroke: black;
+
+}
+
+.infoText {
+    font: 24px sans-serif;
 }
