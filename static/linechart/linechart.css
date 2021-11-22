@@ -1,0 +1,32 @@
+.axis {
+    font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.line {
+    fill: none;
+    stroke: slateblue;
+    stroke-width: 1.5px;
+}
+
+.points {
+    fill: slateblue;
+}
+
+.label {
+    fill: black;
+    font: 24px sans-serif;
+}
+
+.selected {
+    fill: #fa0060;
+}

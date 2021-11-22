@@ -11,7 +11,6 @@ $.ajax({
         let barData = Array.from(newData, x => {
             return {"key": x[0], "value": x[1]};
         })
-        barData["key"]
 
         for (let i = 0; i < barData.length; i++)
         {
