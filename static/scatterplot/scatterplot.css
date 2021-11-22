@@ -1,0 +1,108 @@
+.axis {
+    font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.powerlines {
+    fill: #ef476f;
+    stroke: black;
+}
+
+.powerlineslegend {
+    fill: #ef476f;
+    stroke: black;
+}
+
+.human {
+    fill: #06d6a0;
+    stroke: black;
+}
+
+.humanlegend {
+    fill: #06d6a0;
+    stroke: black;
+}
+
+.undefined {
+    fill: #118ab2;
+    stroke: black;
+}
+
+.undefinedlegend {
+    fill: #118ab2;
+    stroke: black;
+}
+
+.investigation {
+    fill: #710d92;
+    stroke: black;
+}
+
+.investigationlegend {
+    fill: #710d92;
+    stroke: black;
+}
+
+.lightning {
+    fill: #ffd166;
+    stroke: black;
+}
+
+.lightninglegend {
+    fill: #ffd166;
+    stroke: black;
+}
+
+.label {
+    fill: black;
+    font: 24px sans-serif;
+}
+
+.powerlineshighlight {
+    fill: #ef476f;
+    stroke: darkred;
+    stroke-width: 5px;
+}
+
+.humanhighlight {
+    fill: #06d6a0;
+    stroke: darkred;
+    stroke-width: 5px;
+}
+
+.undefinedhighlight {
+    fill: #118ab2;
+    stroke: darkred;
+    stroke-width: 5px;
+}
+
+.investigationhighlight {
+    fill: #710d92;
+    stroke: darkred;
+    stroke-width: 5px;
+}
+
+.lightninghighlight {
+    fill: #ffd166;
+    stroke: darkred;
+    stroke-width: 5px;
+}
+
+.label {
+    fill: black;
+    font: 24px sans-serif;
+}
+
+.legend {
+    fill: none;
+    stroke: black;
+}

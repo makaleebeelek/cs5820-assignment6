@@ -18,10 +18,20 @@ client.connect(function(err) {
     console.log("Connected successfully to server");
     db = client.db(dbName);
     policeData = db.collection("fatal-police-shootings");
+    wildfires = db.collection("california-wildfires");
 });
 
 app.get('/barchart/police', (req, res) => {
     policeData.find({}, {}).toArray(function (e, r) {
+        if (e) throw e;
+        res.status(200);
+        res.append("Context-Type", "application/json")
+        res.send(r);
+    })
+})
+
+app.get('/scatterplot/fires', (req, res) => {
+    wildfires.find({}, {}).toArray( function (e, r) {
         if (e) throw e;
         res.status(200);
         res.append("Context-Type", "application/json")
