@@ -20,6 +20,13 @@
     fill: #fa0060
 }
 
+.label {
+    fill: black;
+    font: 24px sans-serif;
+}
+
+
+
 .legend {
     fill: none;
     stroke: black;

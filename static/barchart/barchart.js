@@ -1,4 +1,4 @@
-let margin = {top: 20, right:20, left: 40, bottom: 30};
+let margin = {top: 20, right:20, left: 150, bottom: 30};
 let width = 960 - margin.left - margin.right;
 let height = 500 - margin.top - margin.bottom;
 
@@ -58,7 +58,7 @@ $.ajax({
 
             d3.select("#raceData")
                 .selectAll("text")
-                .text("Race Shooting Total: " + d.value);
+                .text("Police Shooting Total: " + d.value);
 
         })
             .on("mouseleave", (e, d) => {
@@ -71,7 +71,7 @@ $.ajax({
 
             d3.select("#raceData")
                 .selectAll("text")
-                .text("Race Shooting Total: ");
+                .text("Police Shooting Total: ");
 
             });
 
@@ -86,6 +86,30 @@ $.ajax({
 
         barchart.append("g")
             .call(yAxis)
+
+        barchart.append("text")
+            .attr("x", width / 2 + 20)
+            .attr("y", height + 30)
+            .text("Race")
+            .attr("class", "label");
+
+        barchart.append("text")
+            .attr("x", -150)
+            .attr("y", height / 2 - 30)
+            .text("Police")
+            .attr("class", "label");
+
+        barchart.append("text")
+            .attr("x", -150)
+            .attr("y", height / 2 - 10)
+            .text("Shooting")
+            .attr("class", "label");
+
+        barchart.append("text")
+            .attr("x", -150)
+            .attr("y", height / 2 + 10)
+            .text("Total")
+            .attr("class", "label");
 
         barchart.append("rect")
             .attr("x" , 550)
