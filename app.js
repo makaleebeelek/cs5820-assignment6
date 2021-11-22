@@ -20,6 +20,7 @@ client.connect(function(err) {
     policeData = db.collection("fatal-police-shootings");
     wildfires = db.collection("california-wildfires");
     trumpTweets = db.collection("tweets-donald-trump");
+    utahCovid = db.collection("utah-covid")
 });
 
 app.get('/barchart/police', (req, res) => {
@@ -42,6 +43,15 @@ app.get('/scatterplot/fires', (req, res) => {
 
 app.get('/linechart/tweets', (req, res) => {
     trumpTweets.find({}, {}).toArray( function (e, r) {
+        if (e) throw e;
+        res.status(200);
+        res.append("Context-Type", "application/json")
+        res.send(r);
+    })
+})
+
+app.get('/areachart/covid', (req, res) => {
+    utahCovid.find({}, {}).toArray( function (e, r) {
         if (e) throw e;
         res.status(200);
         res.append("Context-Type", "application/json")

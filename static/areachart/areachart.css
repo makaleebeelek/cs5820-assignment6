@@ -1,0 +1,28 @@
+.axis {
+    font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.label {
+    fill: black;
+    font: 24px sans-serif;
+}
+
+.area {
+    fill: rgba(255, 163, 67, 0.25);
+    stroke: #ff7518;
+    stroke-width: 1.5px;
+}
+.selected {
+    fill: rgba(172, 225, 175, 0.25);
+    stroke: #3cd070;
+}

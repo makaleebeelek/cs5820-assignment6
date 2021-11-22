@@ -13,7 +13,6 @@ $.ajax({
     method: "GET",
     url: "fires",
     success: function (data) {
-        console.log(data)
 
         let xScale = d3.scaleLinear().range([0, width]);
         let yScale = d3.scaleLinear().range([height, 0]);
@@ -26,12 +25,13 @@ $.ajax({
             return (+d['acres'])
         };
 
-
-        let xAxis = d3.axisBottom(xScale);
-        let yAxis = d3.axisLeft(yScale);
-
         xScale.domain([d3.min(data, xValue), d3.max(data, xValue)]);
         yScale.domain([d3.min(data, yValue), d3.max(data, yValue)]);
+
+
+        let xAxis = d3.axisBottom(xScale).tickFormat(d3.format("d"));
+        let yAxis = d3.axisLeft(yScale);
+
 
         scatterplot.selectAll("circle")
             .data(data)
